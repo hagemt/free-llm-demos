@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""USAGE: poetry run ./talk.py "What is your question?"
+"""USAGE: poetry run python3 ./talk.py "What is your question?"
 
-tl;dr: exec bash "$(dirname "$0" )/demo.sh" talk "...?"
+tl;dr: It echoes back answers to questions, via text-to-speech.
 """
 import datetime as DT, io, logging, os, sys  # noqa: E401
 from pathlib import Path
