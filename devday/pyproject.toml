@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "langchain_getting_started"
+version = "0.1.2"
+description = "Run some chains; get hype"
+authors = ["Tor E Hagemann <hagemt@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.12"
+langchain = "0.0.334" # langchain[all] breaks b/c of torch?
+langchain-experimental = "0.0.40"
+openai = "1.2.3"
+pinecone-client = "2.2.4"
+pydub = "0.25.1"
+python-dotenv = "1.0.0"
+tiktoken = "0.5.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "1.7.0"
+ruff = "0.1.5"
+twine = "4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
